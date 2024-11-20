@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
    :root {
       --background: 0 0% 100%;
@@ -56,6 +57,13 @@
       --chart-5: 340 75% 55%;
    }
 }
+
+@layer utilities {
+   .wrapper {
+      @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+   }
+}
+
 @layer base {
    * {
       @apply border-border;
@@ -64,3 +72,18 @@
       @apply bg-background text-foreground;
    }
 }
+
+/* #root {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 2rem;
+   text-align: center;
+}
+
+body {
+   margin: 0;
+   display: flex;
+   place-items: center;
+   min-width: 320px;
+   min-height: 100vh;
+} */

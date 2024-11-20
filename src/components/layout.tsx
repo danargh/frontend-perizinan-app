@@ -10,10 +10,12 @@ import { Outlet } from 'react-router-dom';
 export function BaseLayout(): JSX.Element {
    return (
       <>
-         <h2>Ini base layout</h2>
-         <Suspense>
-            <Outlet />
-         </Suspense>
+         <section className="wrapper">
+            <h1 className="flex justify-center w-full mb-5 text-2xl font-bold">Website Perizinan Karyawan PT XYZ</h1>
+            <Suspense>
+               <Outlet />
+            </Suspense>
+         </section>
       </>
    );
 }
